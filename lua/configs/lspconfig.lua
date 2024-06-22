@@ -20,8 +20,8 @@ lspconfig.clangd.setup {
     on_attach = on_attach,
     on_init = on_init,
     capabilities = capabilities,
-    cmd = { "clangd", "--background-index" },  -- Adjust cmd as needed
-    filetypes = { "c", "cpp", "objc", "objcpp" },  -- Filetypes supported
+    cmd = { "clangd", "--background-index", "--clang-tidy" },  -- Adjust cmd as needed
+    filetypes = { "c", "cpp", "objc", "objcpp", "h", "hpp" },  -- Filetypes supported
     root_dir = lspconfig.util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
 }
 
