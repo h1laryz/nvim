@@ -32,3 +32,8 @@ lspconfig.tsserver.setup {
     capabilities = capabilities,
 }
 
+lspconfig.basedpyright.setup {
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
+}
